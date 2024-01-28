@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
-import { NgModule } from '@angular/core';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { FormsModule, NgModel, ReactiveFormsModule} from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-login',
   standalone: true,
   imports: [RouterOutlet,FormsModule,ReactiveFormsModule,CommonModule,RouterOutlet,RouterLink],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.css'
 })
-export class AppComponent {
-  title = 'AnimatedLoginForm';
+export class LoginComponent {
 
   loginObj: any ={
     userName:"",
@@ -28,3 +26,4 @@ export class AppComponent {
     }
   }
 }
+
